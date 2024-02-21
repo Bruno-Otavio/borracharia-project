@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <title>Clientes</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <form id="form-new">
+            <div>
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" required>
+            </div>
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" name="name" required> 
+            </div>
+            <div>
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" required>
+            </div>
+            <div>
+                <label for="numero">Número</label>
+                <input type="text" name="numero" required>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Cadastrar" required>
+            </div>
+        </form>
+        <section class="table-container">
+            <table id="items-table" class="items-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>CPF</th>
+                        <th>Nome</th>
+                        <th>Numero</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="table-data"></tbody>
+            </table>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+<script src="../js/clients.js"></script>
+</html>
